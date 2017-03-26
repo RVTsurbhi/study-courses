@@ -45,6 +45,41 @@
      font-family: 'Shrikhand', cursive;
    }
 
+   .navbar-form .form-group{
+       padding: 3px;
+       border: solid 1px #E4E4E4;
+       border-radius: 6px;
+       background-color: #fff;
+   }
+
+   .navbar-form .form-group input{
+       border: 0;
+       box-shadow: none;
+   }
+
+   .navbar-form .form-group button{
+       margin: 2px 0 0 0;
+       background: none;
+       box-shadow: none;
+       border: 0;
+       color: #666666;
+       padding: 0 8px 0 10px;
+       border-left: solid 1px #ccc;
+   }
+
+   .navbar-form .form-group button:hover{
+       border: 0;
+       box-shadow: none;
+       border-left: solid 1px #ccc;
+   }
+
+   .navbar-form .form-group .fa-search{
+       font-size:15px;
+   }
+
+
+
+
    section
    {
      min-height: 500px;
@@ -89,12 +124,19 @@
           <ul class="nav navbar-nav navbar-right">
 
           <li><a href="#"><form class="navbar-form navbar-left" role="search">
-              <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search"><i class="fa fa-search"></i>
-            </div>
-              <button type="button" class="btn btn-success">sign in</button>
-            </form></a>
+               <div class="form-group">
+                 <input type="text" class="form-control" placeholder="Search"/>
+                    <!-- <div class="form-grp-btn"> -->
+                      <span class="input-grp-btn">
+                      <button class="btn btn-info btn-lg" type="button">
+                        <i class="fa fa-search"></i></button></span>
+                    <!-- </div> -->
+                </div>
+              </form>
+            </a>
+
           <li><a href="#"><button type="button" class="btn btn-primary navbar-btn">upload</button></a>
+          <li><a href="#"><button type="button" class="btn btn-success navbar-btn">sign in</button></a>
 
         </div>
       </div>
